@@ -12,9 +12,7 @@ export default function BlogPage({ title, date, content }) {
             </Head>
 
             <main>
-                <h1>
-                    { title }
-                </h1>
+                <h2 className="font-bold text-lg my-3 border-b-2 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500">{ title }</h2>
                 <div>
                     { content }
                 </div>
