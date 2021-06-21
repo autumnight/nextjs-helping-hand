@@ -1,0 +1,7 @@
+{
+  "name": "Helping Hand App",
+  "description": "Test project",
+  "repository": "https://github.com/dakovlen/helping-hand",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "express", "static"]
+}
