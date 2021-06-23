@@ -7,16 +7,16 @@ export default function Home({posts}) {
         posts.map((post) => (
           <div key={post.id}>
             <h2>{post.Title}</h2>
+            <div>{post.User.username}</div>
           </div>
-        ))
-      }
+        ))}
     </div>
   )
 }
 
 export async function getStaticProps() {
 
-  const res = await fetch("http://localhost:1337/posts");
+  const res = await fetch("https://halping-hand.herokuapp.com/posts");
   const posts = await res.json();
 
   return {
