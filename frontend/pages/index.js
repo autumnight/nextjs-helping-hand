@@ -15,13 +15,6 @@ export default function Home({posts}) {
 }
 
 export async function getStaticProps() {
-  // useEffect(() => {
-  //   fetchData()
-  //
-  //   function fetchData() {
-  //
-  //   }
-  // })
 
   const res = await fetch("http://localhost:1337/posts");
   const posts = await res.json();
