@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "posts",
+  "collectionName": "actors",
   "info": {
-    "name": "Post",
-    "description": ""
+    "name": "actors"
   },
   "options": {
     "increments": true,
@@ -12,19 +11,15 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
+    "first_name": {
       "type": "string"
     },
-    "Slug": {
+    "last_name": {
       "type": "string"
     },
-    "Content": {
-      "type": "richtext"
-    },
-    "User": {
-      "plugin": "users-permissions",
-      "model": "user",
-      "via": "posts"
+    "movies": {
+      "via": "actors",
+      "collection": "movies"
     }
   }
 }
