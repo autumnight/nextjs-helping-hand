@@ -1,5 +1,5 @@
 
-import '../styles/base.scss'
+import '../styles/style.scss'
 
 function MyApp({ Component, pageProps }) {
   return (
