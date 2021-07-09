@@ -6,7 +6,7 @@ export default function Home({ movies }) {
   console.log(movies)
   return (
     <div title={'Home Page'}>
-      <div className="container">
+      <div className="container movies-container">
         {movies.map(movie => (
           <Card key={movie.id} movie={movie}/>
         ))}
