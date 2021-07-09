@@ -7,6 +7,12 @@ img {
   max-width: 100%;
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .menu {
   display: flex;
   list-style: none;

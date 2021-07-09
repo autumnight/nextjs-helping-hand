@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 
 export default function MainLayout({ children, title="Base Title" }) {
@@ -9,8 +8,6 @@ export default function MainLayout({ children, title="Base Title" }) {
                 <title>{title} | Page</title>
                 <link rel="icon" href="/images/favicon.png"/>
             </Head>
-
-            <Header/>
 
             <main>
                 { children }
