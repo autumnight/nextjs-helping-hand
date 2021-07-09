@@ -6,3 +6,21 @@
 img {
   max-width: 100%;
 }
+
+.menu {
+  display: flex;
+  list-style: none;
+
+  li {
+    margin-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    a {
+      &.active {
+        color: aquamarine;
+      }
+    }
+  }
+}
