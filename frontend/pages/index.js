@@ -3,7 +3,6 @@ import fetch from "isomorphic-unfetch";
 import Card from "../components/Card";
 
 export default function Home({ movies }) {
-  console.log(movies)
   return (
     <div title={'Home Page'}>
       <div className="container movies-container">
